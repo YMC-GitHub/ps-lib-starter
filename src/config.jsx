@@ -45,5 +45,6 @@ var txtOpts={
 // save
 var basePath = "D:\\code-store\\js-for-ps\\hello-ps-starter";
 var SCREENSHOT_PATH=basePath+"\\screenshot"
+var DIST_PATH=basePath+"\\dist"
 var FILE_NAME="helloworld";
 var FILE="";
