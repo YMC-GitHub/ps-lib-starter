@@ -7,3 +7,4 @@
 #include save-as-jpg.jsx
 #include save-as-gif.jsx
 #include save-as-psd.jsx
+#include save-as-webimage.jsx

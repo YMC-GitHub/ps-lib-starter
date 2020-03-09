@@ -19,6 +19,7 @@ app.displayDialogs = DialogModes.NO;
 #include create-doc.jsx
 #include create-bg.jsx
 #include create-txt.jsx
+#include delete-layer1.jsx
 
 // 恢复旧的状态
 app.preferences.rulerUnits = startRulerUnits;
