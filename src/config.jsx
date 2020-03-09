@@ -41,3 +41,9 @@ var txtOpts={
   content:"\uf006",//
 }
 //"&#xf26e;".replace("&#x","\u")
+
+// save
+var basePath = "D:\\code-store\\js-for-ps\\hello-ps-starter";
+var SCREENSHOT_PATH=basePath+"\\screenshot"
+var FILE_NAME="helloworld";
+var FILE="";

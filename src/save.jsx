@@ -1,11 +1,6 @@
 ﻿#target photoshop
-// 某一文档
-//newDoc
-// 某一位置
-var basePath = "D:\\code-store\\js-for-ps\\hello-ps-starter";
-var SCREENSHOT_PATH=basePath+"\\screenshot"
-var FILE_NAME="helloworld";
-var FILE="";
+
+#include config.jsx
 /*
 $.writeln("PROJECT_PATH:"+basePath);
 $.writeln("SCREENSHOT_PATH:"+SCREENSHOT_PATH);
