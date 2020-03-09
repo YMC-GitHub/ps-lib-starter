@@ -3,7 +3,7 @@
 
 #include config.jsx
 
-FILE=SCREENSHOT_PATH+"\\"+FILE_NAME+".psd";
+FILE=DIST_PATH+"\\"+FILE_NAME+".psd";
 //alert(FILE)
 //$.writeln("file:"+FILE)
 //alert("step00:")
