@@ -3,16 +3,29 @@
 
 #include config.jsx
 
+function SavePNG(saveFile, compression){
+	pngSaveOptions = new PNGSaveOptions();
+
+	// compression (The compression value)
+	// Default: 0
+	// Range: [0,9]
+	pngSaveOptions.compression = compression
+
+	// interlaced (True to interlace rows)
+	// Default: false
+	pngSaveOptions.interlaced = false
+
+	// typename (The class name of the referenced PNGSaveOptions object.)
+	// Read only
+	//pngSaveOptions.typename
+
+	app.activeDocument.saveAs(new File(saveFile), pngSaveOptions, true,Extension.LOWERCASE);
+}
+
 // =====================
 // 导出png
 // =====================
 FILE=SCREENSHOT_PATH+"\\"+FILE_NAME+".png";
-// 文件指针
-var fileOut = new File(FILE);
-// 导出选项
-var exportOptions = new ExportOptionsSaveForWeb();
-// 压缩格式
-exportOptions.PNG8 = true;
-// 导出图片
-//newDoc.exportDocument(fileOut, ExportType.SAVEFORWEB, exportOptions);
-app.activeDocument.exportDocument(fileOut, ExportType.SAVEFORWEB, exportOptions);
+SavePNG(FILE,0)
+
+
